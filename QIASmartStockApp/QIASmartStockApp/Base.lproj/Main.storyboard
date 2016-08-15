@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6Yk-wP-56j">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Left Menu View Controller-->
+        <scene sceneID="UV2-M7-asb">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuViewController" id="9AO-sd-DVz" customClass="LeftMenuViewController" customModule="QIASmartStockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gT2-E9-kbq"/>
+                        <viewControllerLayoutGuide type="bottom" id="i8S-yc-ib7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fgH-Cb-RvG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bd6-bH-FTH">
+                                <rect key="frame" x="0.0" y="72" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuTableViewCellId" id="AHe-PQ-1uf" customClass="MenuTableViewCell" customModule="QIASmartStockApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AHe-PQ-1uf" id="ahn-Fe-C1G">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWn-rF-xop" userLabel="topBarView">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Oaq-EL-wAK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bd6-bH-FTH" firstAttribute="width" secondItem="bWn-rF-xop" secondAttribute="width" id="7Bz-KI-lyc"/>
+                            <constraint firstItem="bd6-bH-FTH" firstAttribute="bottom" secondItem="i8S-yc-ib7" secondAttribute="top" constant="8" symbolic="YES" id="D8w-1c-Hay"/>
+                            <constraint firstItem="bd6-bH-FTH" firstAttribute="leading" secondItem="bWn-rF-xop" secondAttribute="leading" id="KN2-vk-anp"/>
+                            <constraint firstItem="bWn-rF-xop" firstAttribute="centerX" secondItem="fgH-Cb-RvG" secondAttribute="centerX" id="NEg-n6-7vx"/>
+                            <constraint firstItem="bWn-rF-xop" firstAttribute="width" secondItem="fgH-Cb-RvG" secondAttribute="width" id="ZHm-yL-fC8"/>
+                            <constraint firstItem="bWn-rF-xop" firstAttribute="top" secondItem="gT2-E9-kbq" secondAttribute="bottom" constant="8" symbolic="YES" id="fMi-q2-kX7"/>
+                            <constraint firstItem="bd6-bH-FTH" firstAttribute="centerX" secondItem="bWn-rF-xop" secondAttribute="centerX" id="lDb-Xx-RcQ"/>
+                            <constraint firstItem="bd6-bH-FTH" firstAttribute="top" secondItem="bWn-rF-xop" secondAttribute="bottom" id="wOY-CC-CyU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="bd6-bH-FTH" id="jdS-DR-kus"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXl-fk-SK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1301" y="-1240"/>
+        </scene>
+        <!--Custom Navigation Controller-->
+        <scene sceneID="k9L-je-mPk">
+            <objects>
+                <navigationController id="6Yk-wP-56j" customClass="CustomNavigationController" customModule="QIASmartStockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DZq-IS-zjN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ze0-Qx-Qdf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kb3-k4-2ht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1301" y="-569"/>
+        </scene>
+        <!--QIA Smart Stock App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MenuId0" id="BYZ-38-t0r" customClass="ViewController" customModule="QIASmartStockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Og-ls-BSb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="bW3-cW-TvK" kind="embed" id="vCe-y9-Vfh"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70471157500000003" green="0.79701522440000006" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Og-ls-BSb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="06j-fT-oTI"/>
+                            <constraint firstItem="1Og-ls-BSb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YPf-M8-MG5"/>
+                            <constraint firstItem="1Og-ls-BSb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="cPC-Vw-14g"/>
+                            <constraint firstItem="1Og-ls-BSb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iYb-t3-J83"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="QIA Smart Stock App" id="ZWy-fh-Gel"/>
+                    <connections>
+                        <outlet property="containerView" destination="1Og-ls-BSb" id="gKg-eA-N5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449" y="-569"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="XOl-Sp-3Xs">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="Home" id="bW3-cW-TvK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j6T-FF-O47"/>
+                        <viewControllerLayoutGuide type="bottom" id="ViD-kO-rEK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UUa-Cl-eRK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAz-g7-zAX">
+                                <rect key="frame" x="277" y="289" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76884315235306255" green="0.5228380128910165" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QAz-g7-zAX" firstAttribute="centerY" secondItem="UUa-Cl-eRK" secondAttribute="centerY" id="1JX-YI-s6J"/>
+                            <constraint firstItem="QAz-g7-zAX" firstAttribute="centerX" secondItem="UUa-Cl-eRK" secondAttribute="centerX" id="xMX-zM-TdQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6D4-hQ-2uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="-1604"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="ngm-wL-d4p">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" title="Settings" id="at8-Mq-ltB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jk0-4c-LrK"/>
+                        <viewControllerLayoutGuide type="bottom" id="vmF-13-ral"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YqH-RR-zgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDc-xa-OQS">
+                                <rect key="frame" x="268" y="290" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-fN-vbh">
+                                <rect key="frame" x="-2" y="285" width="604" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cgb-fN-vbh" firstAttribute="width" secondItem="YqH-RR-zgZ" secondAttribute="width" id="4LO-Df-d3d"/>
+                            <constraint firstItem="cDc-xa-OQS" firstAttribute="centerX" secondItem="YqH-RR-zgZ" secondAttribute="centerX" id="6N9-32-eyx"/>
+                            <constraint firstItem="cgb-fN-vbh" firstAttribute="centerX" secondItem="YqH-RR-zgZ" secondAttribute="centerX" id="KIa-wt-xOu"/>
+                            <constraint firstItem="cDc-xa-OQS" firstAttribute="centerY" secondItem="YqH-RR-zgZ" secondAttribute="centerY" id="XUz-Ov-Ijk"/>
+                            <constraint firstItem="cgb-fN-vbh" firstAttribute="centerY" secondItem="YqH-RR-zgZ" secondAttribute="centerY" id="bYP-4M-qP8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rS-L0-izK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="-887"/>
+        </scene>
+        <!--Reports-->
+        <scene sceneID="kbu-So-fxf">
+            <objects>
+                <viewController storyboardIdentifier="ReportsViewController" title="Reports" id="ZAY-zj-heW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gyD-H0-cGR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zue-8E-4fr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PWr-S4-WSo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnk-mh-hu1">
+                                <rect key="frame" x="270" y="289" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.92941176469999998" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pnk-mh-hu1" firstAttribute="centerY" secondItem="PWr-S4-WSo" secondAttribute="centerY" id="348-Ib-TiX"/>
+                            <constraint firstItem="pnk-mh-hu1" firstAttribute="centerX" secondItem="PWr-S4-WSo" secondAttribute="centerX" id="DR6-yr-TL7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJD-NL-BCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="-164"/>
+        </scene>
+        <!--Stock info-->
+        <scene sceneID="Z19-Bt-q4d">
+            <objects>
+                <viewController storyboardIdentifier="Stock infoViewController" title="Stock info" id="5Ag-gj-Jdd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9QF-Hi-pa6"/>
+                        <viewControllerLayoutGuide type="bottom" id="jiY-FV-XtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IIw-87-FkS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAc-QL-nnu">
+                                <rect key="frame" x="262" y="290" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZAc-QL-nnu" firstAttribute="centerY" secondItem="IIw-87-FkS" secondAttribute="centerY" id="aDK-qY-v8E"/>
+                            <constraint firstItem="ZAc-QL-nnu" firstAttribute="centerX" secondItem="IIw-87-FkS" secondAttribute="centerX" id="oOW-Oa-0AK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwL-Xh-EdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="577"/>
+        </scene>
+    </scenes>
+</document>

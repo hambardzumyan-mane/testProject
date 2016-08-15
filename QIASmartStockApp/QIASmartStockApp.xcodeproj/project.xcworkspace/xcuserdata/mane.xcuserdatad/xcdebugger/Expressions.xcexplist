@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ESNavigationController.setBodyViewController(UIViewController, closeOpenMenu : Bool, ignoreClassMatch : Bool) -&gt; ():ESNavigationController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "rootType.subjectType">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LeftMenuViewController.tableView(UITableView, didSelectRowAtIndexPath : NSIndexPath) -&gt; ():LeftMenuViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewController.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
