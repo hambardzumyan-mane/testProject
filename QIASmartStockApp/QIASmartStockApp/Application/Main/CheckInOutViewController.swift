@@ -9,6 +9,9 @@ import UIKit
 
 class CheckInOutViewController: UIViewController {
 
+    @IBOutlet private weak var searchLabel: UILabel!
+    @IBOutlet private weak var searchBar: UISearchBar!
+    
 	internal var status = CheckInOutStatus.None
 
 	enum CheckInOutStatus: Int {
@@ -17,13 +20,24 @@ class CheckInOutViewController: UIViewController {
 		case CheckIn = 2
 	}
 
-	override func viewDidLoad() {
-		if self.status == .CheckIn {
-			NSLog("Check in..")
-		}
-
-		if self.status == .CheckOut {
-			NSLog("Check out..")
-		}
-	}
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.hideKeyboard()
+        
+        switch self.status {
+        case .CheckIn:
+            NSLog("Check in ...")
+            
+            self.searchLabel.text = "Search by serial number"
+            self.searchBar.placeholder = "42B38"
+        case .CheckOut:
+            NSLog("Check out ...")
+            
+            self.searchLabel.text = "Search by product name or catalog number"
+            self.searchBar.placeholder = "QIA CUBE...."
+        default:
+            NSLog("Not check ...")
+        }
+    }
 }

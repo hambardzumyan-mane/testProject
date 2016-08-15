@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomNavigationController: ESNavigationController {
+class CustomNavigationController: ESNavigationController, UINavigationControllerDelegate {
 
 	override func viewDidLoad() {
 
@@ -19,6 +19,23 @@ class CustomNavigationController: ESNavigationController {
 		if var delegate: MenuDelegate = viewController! as? MenuDelegate {
 			delegate.easySlideNavigationController = self
 		}
+
+		self.delegate = self
+	}
+
+	func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
+		if viewController.isKindOfClass(HomeViewController)
+		|| viewController.isKindOfClass(SettingsViewController)
+        || viewController.isKindOfClass(ReportsViewController)
+        || viewController.isKindOfClass(StockInfoViewController){
+			let leftButton = UIBarButtonItem.itemWith(UIImage(named: "MenuIcon"), target: self, action: #selector(self.openLeftMenu))
+			viewController.navigationItem.leftBarButtonItem = leftButton
+		}
+	}
+
+	@objc
+	private func openLeftMenu() {
+		self.openMenu(.LeftMenu, animated: true, completion: { })
 	}
 }
 

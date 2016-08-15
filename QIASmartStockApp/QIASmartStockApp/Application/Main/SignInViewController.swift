@@ -29,9 +29,6 @@ class SignInViewController: UIViewController {
 		self.signIn.layer.shadowRadius = 1
 		self.signIn.layer.shadowOpacity = 1
 
-		let leftButton = UIBarButtonItem.itemWith(UIImage(named: "MenuIcon"), target: self, action: #selector(openLeftMenu))
-		self.navigationItem.leftBarButtonItem = leftButton
-		self.navigationItem.leftBarButtonItem?.tintColor = UIColor.blackColor()
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -77,7 +74,10 @@ class SignInViewController: UIViewController {
 			self.password.layer.borderColor = UIColor.blackColor().CGColor
 			self.email.layer.borderColor = UIColor.blackColor().CGColor
 
-			self.performSegueWithIdentifier("showHomeViewSegue", sender: self)
+			// self.performSegueWithIdentifier("showHomeViewSegue", sender: nil)
+			let storyboard = UIStoryboard(name: "Main", bundle: nil)
+			let viewController = storyboard.instantiateViewControllerWithIdentifier("MenuNavigationController")
+			UIApplication.sharedApplication().keyWindow?.rootViewController = viewController
 		}
 	}
 
@@ -87,14 +87,6 @@ class SignInViewController: UIViewController {
 		alertBox.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default, handler: nil))
 
 		self.presentViewController(alertBox, animated: true, completion: nil)
-	}
-
-	func openLeftMenu() {
-		self.getEasySlide().openMenu(.LeftMenu, animated: true, completion: { })
-	}
-
-	private func getEasySlide() -> ESNavigationController {
-		return self.navigationController as! ESNavigationController
 	}
 }
 

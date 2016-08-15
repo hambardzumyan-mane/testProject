@@ -13,7 +13,6 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
 	@IBOutlet private weak var tableView: UITableView!
 
 	private let menuItems = ["Home", "Settings", "Reports", "Stock info"]
-//	private var menuViewControllers: [UIViewController] = []
 
 	var easySlideNavigationController: ESNavigationController?
 
@@ -22,12 +21,6 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
 		self.tableView.dataSource = self
 		self.tableView.delegate = self
 
-		// load menu view controllers
-//		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//		for menuItem in menuItems {
-//			let viewController = storyboard.instantiateViewControllerWithIdentifier("\(menuItem)ViewController")
-//			self.menuViewControllers.append(viewController)
-//		}
 	}
 
 	// MARK: - UITableViewDataSource, UITableViewDelegate
