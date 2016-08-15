@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BAFF3DF71D5C739F00E877F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3DF61D5C739F00E877F0 /* AppDelegate.swift */; };
-		BAFF3DF91D5C739F00E877F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3DF81D5C739F00E877F0 /* ViewController.swift */; };
+		3A53E1171D5C9E8C001BCDBB /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53E1161D5C9E8C001BCDBB /* CustomNavigationController.swift */; };
+		3A53E1191D5C9F66001BCDBB /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53E1181D5C9F66001BCDBB /* LeftMenuViewController.swift */; };
+		3A53E11B1D5CA9AD001BCDBB /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53E11A1D5CA9AD001BCDBB /* MenuTableViewCell.swift */; };
 		BAFF3DFC1D5C739F00E877F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFF3DFA1D5C739F00E877F0 /* Main.storyboard */; };
 		BAFF3DFE1D5C739F00E877F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFF3DFD1D5C739F00E877F0 /* Assets.xcassets */; };
 		BAFF3E011D5C739F00E877F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFF3DFF1D5C739F00E877F0 /* LaunchScreen.storyboard */; };
+		BAFF3E0C1D5C741C00E877F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */; };
+		BAFF3E0D1D5C741C00E877F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3E0B1D5C741C00E877F0 /* ViewController.swift */; };
+		BAFF3E111D5C76E900E877F0 /* ESNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3E101D5C76E900E877F0 /* ESNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A53E1161D5C9E8C001BCDBB /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		3A53E1181D5C9F66001BCDBB /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		3A53E11A1D5CA9AD001BCDBB /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		BAFF3DF31D5C739F00E877F0 /* QIASmartStockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QIASmartStockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAFF3DF61D5C739F00E877F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAFF3DF81D5C739F00E877F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAFF3DFB1D5C739F00E877F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAFF3DFD1D5C739F00E877F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFF3E001D5C739F00E877F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAFF3E021D5C739F00E877F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAFF3E0B1D5C741C00E877F0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAFF3E101D5C76E900E877F0 /* ESNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		BAFF3DF51D5C739F00E877F0 /* QIASmartStockApp */ = {
 			isa = PBXGroup;
 			children = (
-				BAFF3DF61D5C739F00E877F0 /* AppDelegate.swift */,
-				BAFF3DF81D5C739F00E877F0 /* ViewController.swift */,
-				BAFF3DFA1D5C739F00E877F0 /* Main.storyboard */,
+				BAFF3E081D5C73CC00E877F0 /* Application */,
 				BAFF3DFD1D5C739F00E877F0 /* Assets.xcassets */,
-				BAFF3DFF1D5C739F00E877F0 /* LaunchScreen.storyboard */,
 				BAFF3E021D5C739F00E877F0 /* Info.plist */,
+				BAFF3DFA1D5C739F00E877F0 /* Main.storyboard */,
+				BAFF3DFF1D5C739F00E877F0 /* LaunchScreen.storyboard */,
+				BAFF3E0E1D5C767E00E877F0 /* Library */,
 			);
 			path = QIASmartStockApp;
+			sourceTree = "<group>";
+		};
+		BAFF3E081D5C73CC00E877F0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF3E091D5C73CC00E877F0 /* Main */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BAFF3E091D5C73CC00E877F0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */,
+				BAFF3E0B1D5C741C00E877F0 /* ViewController.swift */,
+				3A53E1161D5C9E8C001BCDBB /* CustomNavigationController.swift */,
+				3A53E1181D5C9F66001BCDBB /* LeftMenuViewController.swift */,
+				3A53E11A1D5CA9AD001BCDBB /* MenuTableViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BAFF3E0E1D5C767E00E877F0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF3E0F1D5C76E900E877F0 /* EasySlide */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BAFF3E0F1D5C76E900E877F0 /* EasySlide */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF3E101D5C76E900E877F0 /* ESNavigationController.swift */,
+			);
+			path = EasySlide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAFF3DF91D5C739F00E877F0 /* ViewController.swift in Sources */,
-				BAFF3DF71D5C739F00E877F0 /* AppDelegate.swift in Sources */,
+				3A53E11B1D5CA9AD001BCDBB /* MenuTableViewCell.swift in Sources */,
+				3A53E1171D5C9E8C001BCDBB /* CustomNavigationController.swift in Sources */,
+				BAFF3E0D1D5C741C00E877F0 /* ViewController.swift in Sources */,
+				BAFF3E0C1D5C741C00E877F0 /* AppDelegate.swift in Sources */,
+				BAFF3E111D5C76E900E877F0 /* ESNavigationController.swift in Sources */,
+				3A53E1191D5C9F66001BCDBB /* LeftMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +297,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QIASmartStockApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qiagen.QIASmartStockApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evenq.evenq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,9 +311,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QIASmartStockApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qiagen.QIASmartStockApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evenq.evenq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -286,6 +339,7 @@
 				BAFF3E071D5C739F00E877F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
