@@ -2,8 +2,8 @@
 //  MenuTableViewCell.swift
 //  QIASmartStockApp
 //
-//  Created by Mane Hambardzumyan on 8/11/16.
-//  Copyright © 2016 Qiagen. All rights reserved.
+//  Created by Mane Hambardzumyan on 8/15/16.
+//  Copyright © 2016 Instigate Mobile. All rights reserved.
 //
 
 import UIKit

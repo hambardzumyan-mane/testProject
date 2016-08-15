@@ -10,11 +10,14 @@
 		3A53E1171D5C9E8C001BCDBB /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53E1161D5C9E8C001BCDBB /* CustomNavigationController.swift */; };
 		3A53E1191D5C9F66001BCDBB /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53E1181D5C9F66001BCDBB /* LeftMenuViewController.swift */; };
 		3A53E11B1D5CA9AD001BCDBB /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53E11A1D5CA9AD001BCDBB /* MenuTableViewCell.swift */; };
+		8AFC80681D61A43F00F6915F /* CheckInOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC80651D61A43F00F6915F /* CheckInOutViewController.swift */; };
+		8AFC80691D61A43F00F6915F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC80661D61A43F00F6915F /* SignInViewController.swift */; };
+		8AFC806A1D61A43F00F6915F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC80671D61A43F00F6915F /* Validation.swift */; };
 		BAFF3DFC1D5C739F00E877F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFF3DFA1D5C739F00E877F0 /* Main.storyboard */; };
 		BAFF3DFE1D5C739F00E877F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFF3DFD1D5C739F00E877F0 /* Assets.xcassets */; };
 		BAFF3E011D5C739F00E877F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFF3DFF1D5C739F00E877F0 /* LaunchScreen.storyboard */; };
 		BAFF3E0C1D5C741C00E877F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */; };
-		BAFF3E0D1D5C741C00E877F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3E0B1D5C741C00E877F0 /* ViewController.swift */; };
+		BAFF3E0D1D5C741C00E877F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3E0B1D5C741C00E877F0 /* HomeViewController.swift */; };
 		BAFF3E111D5C76E900E877F0 /* ESNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3E101D5C76E900E877F0 /* ESNavigationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +25,16 @@
 		3A53E1161D5C9E8C001BCDBB /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		3A53E1181D5C9F66001BCDBB /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		3A53E11A1D5CA9AD001BCDBB /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		8AFC80651D61A43F00F6915F /* CheckInOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInOutViewController.swift; sourceTree = "<group>"; };
+		8AFC80661D61A43F00F6915F /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8AFC80671D61A43F00F6915F /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		BAFF3DF31D5C739F00E877F0 /* QIASmartStockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QIASmartStockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFF3DFB1D5C739F00E877F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAFF3DFD1D5C739F00E877F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAFF3E001D5C739F00E877F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAFF3E021D5C739F00E877F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAFF3E0B1D5C741C00E877F0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAFF3E0B1D5C741C00E877F0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BAFF3E101D5C76E900E877F0 /* ESNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,9 +90,12 @@
 			isa = PBXGroup;
 			children = (
 				BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */,
-				BAFF3E0B1D5C741C00E877F0 /* ViewController.swift */,
+				BAFF3E0B1D5C741C00E877F0 /* HomeViewController.swift */,
 				3A53E1161D5C9E8C001BCDBB /* CustomNavigationController.swift */,
 				3A53E1181D5C9F66001BCDBB /* LeftMenuViewController.swift */,
+				8AFC80651D61A43F00F6915F /* CheckInOutViewController.swift */,
+				8AFC80661D61A43F00F6915F /* SignInViewController.swift */,
+				8AFC80671D61A43F00F6915F /* Validation.swift */,
 				3A53E11A1D5CA9AD001BCDBB /* MenuTableViewCell.swift */,
 			);
 			path = Main;
@@ -181,10 +190,13 @@
 			files = (
 				3A53E11B1D5CA9AD001BCDBB /* MenuTableViewCell.swift in Sources */,
 				3A53E1171D5C9E8C001BCDBB /* CustomNavigationController.swift in Sources */,
-				BAFF3E0D1D5C741C00E877F0 /* ViewController.swift in Sources */,
+				BAFF3E0D1D5C741C00E877F0 /* HomeViewController.swift in Sources */,
 				BAFF3E0C1D5C741C00E877F0 /* AppDelegate.swift in Sources */,
+				8AFC806A1D61A43F00F6915F /* Validation.swift in Sources */,
+				8AFC80691D61A43F00F6915F /* SignInViewController.swift in Sources */,
 				BAFF3E111D5C76E900E877F0 /* ESNavigationController.swift in Sources */,
 				3A53E1191D5C9F66001BCDBB /* LeftMenuViewController.swift in Sources */,
+				8AFC80681D61A43F00F6915F /* CheckInOutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

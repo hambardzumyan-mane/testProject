@@ -2,21 +2,31 @@
 //  ViewController.swift
 //  QIASmartStockApp
 //
-//  Created by Mane Hambardzumyan on 8/11/16.
-//  Copyright © 2016 Qiagen. All rights reserved.
+//  Created by Mane Hambardzumyan on 8/15/16.
+//  Copyright © 2016 Instigate Mobile. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
-	@IBOutlet weak var containerView: UIView!
+	@IBOutlet var stockList: UIButton!
+	@IBOutlet var checkOut: UIButton!
+	@IBOutlet var manageStock: UIButton!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		let leftButton = UIBarButtonItem.itemWith(UIImage(named: "MenuIcon"), target: self, action: #selector(openLeftMenu))
-		self.navigationItem.leftBarButtonItem = leftButton
-		self.navigationItem.leftBarButtonItem?.tintColor = UIColor.blackColor()
+		let arrayOfButtons: Array<UIButton> = [self.stockList, self.checkOut, self.manageStock]
+
+		for button in arrayOfButtons {
+			button.backgroundColor = UIColor.whiteColor()
+			button.layer.shadowColor = UIColor.blackColor().CGColor
+			button.layer.shadowOffset = CGSizeMake(2, 2)
+			button.layer.masksToBounds = false
+			button.layer.shadowRadius = 1
+			button.layer.shadowOpacity = 1
+		}
 
 	}
 
@@ -25,24 +35,19 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-	func openLeftMenu() {
-		self.getEasySlide().openMenu(.LeftMenu, animated: true, completion: { })
+	// MARK: - Navigation
+
+	// In a storyboard-based application, you will often want to do a little preparation before navigation
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		let viewControler = segue.destinationViewController
+		if segue.identifier == "checkInSegue" {
+			let checkInOutViewController = viewControler as! CheckInOutViewController
+			checkInOutViewController.status = .CheckIn
+		}
+		if segue.identifier == "checkOutSegue" {
+			let checkInOutViewController = viewControler as! CheckInOutViewController
+			checkInOutViewController.status = .CheckOut
+		}
 	}
 
-	private func getEasySlide() -> ESNavigationController {
-		return self.navigationController as! ESNavigationController
-	}
-
-}
-
-extension UIBarButtonItem {
-	class func itemWith(colorfulImage: UIImage?, target: AnyObject, action: Selector) -> UIBarButtonItem {
-		let button = UIButton(type: .Custom)
-		button.setImage(colorfulImage, forState: .Normal)
-		button.frame = CGRectMake(0, 0, 44.0, 44.0)
-		button.addTarget(target, action: action, forControlEvents: .TouchUpInside)
-
-		let barButtonItem = UIBarButtonItem(customView: button)
-		return barButtonItem
-	}
 }

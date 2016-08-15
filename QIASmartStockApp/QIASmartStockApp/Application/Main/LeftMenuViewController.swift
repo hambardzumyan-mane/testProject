@@ -2,8 +2,8 @@
 //  LeftMenuViewController.swift
 //  QIASmartStockApp
 //
-//  Created by Mane Hambardzumyan on 8/11/16.
-//  Copyright © 2016 Qiagen. All rights reserved.
+//  Created by Mane Hambardzumyan on 8/15/16.
+//  Copyright © 2016 Instigate Mobile. All rights reserved.
 //
 
 import UIKit
@@ -53,7 +53,7 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
 		// get the new view controller
-		let viewController = storyboard.instantiateViewControllerWithIdentifier("\(menuItems[indexPath.row])ViewController")
+		let viewController = storyboard.instantiateViewControllerWithIdentifier("\(menuItems[indexPath.row])ViewControllerID")
 
 		// present next view
 		if let slideController = self.easySlideNavigationController {
