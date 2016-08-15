@@ -169,6 +169,7 @@
 				TargetAttributes = {
 					BAFF3DF21D5C739F00E877F0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Z5F82WQE7X;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -335,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Z5F82WQE7X;
 				INFOPLIST_FILE = QIASmartStockApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -350,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = Z5F82WQE7X;
 				INFOPLIST_FILE = QIASmartStockApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

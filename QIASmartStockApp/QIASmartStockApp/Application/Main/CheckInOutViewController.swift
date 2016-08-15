@@ -11,6 +11,7 @@ class CheckInOutViewController: UIViewController {
 
     @IBOutlet private weak var searchLabel: UILabel!
     @IBOutlet private weak var searchBar: UISearchBar!
+
     
 	internal var status = CheckInOutStatus.None
 

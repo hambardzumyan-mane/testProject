@@ -8,8 +8,6 @@
 
 import UIKit
 
-//class Validation: NSObject {
-
 class Validation {
 	static let sharedInstance = Validation()
 
@@ -33,4 +31,4 @@ class Validation {
 	}
 }
 
-var valid = Validation.sharedInstance
+// var valid = Validation.sharedInstance
