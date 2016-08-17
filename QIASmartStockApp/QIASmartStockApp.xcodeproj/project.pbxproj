@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A18BAE41D61F39100B0CF4D /* StockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18BAE31D61F39100B0CF4D /* StockListViewController.swift */; };
+		3A3146231D64341900022B82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A3146221D64341900022B82 /* GoogleService-Info.plist */; };
+		3A3F092A1D6457A700CD1090 /* QRcodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F09291D6457A700CD1090 /* QRcodeReaderViewController.swift */; };
+		3A5814651D62031500B0B6AC /* QiaCubeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5814641D62031500B0B6AC /* QiaCubeTableViewController.swift */; };
+		3A5814671D62081B00B0B6AC /* CubeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5814661D62081B00B0B6AC /* CubeTableViewCell.swift */; };
+		3A5814691D62E83400B0B6AC /* RoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5814681D62E83400B0B6AC /* RoomTableViewController.swift */; };
+		3A58146B1D62E8AB00B0B6AC /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A58146A1D62E8AB00B0B6AC /* RoomTableViewCell.swift */; };
+		3A58146D1D63342800B0B6AC /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A58146C1D63342800B0B6AC /* StatusViewController.swift */; };
+		3A5C3A481D61D3B800050AA3 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C3A411D61D3B800050AA3 /* CustomNavigationController.swift */; };
+		3A5C3A491D61D3B800050AA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C3A421D61D3B800050AA3 /* HomeViewController.swift */; };
+		3A5C3A4A1D61D3B800050AA3 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C3A431D61D3B800050AA3 /* LeftMenuViewController.swift */; };
+		3A5C3A4B1D61D3B800050AA3 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C3A441D61D3B800050AA3 /* MenuTableViewCell.swift */; };
+		3A5C3A4C1D61D3B800050AA3 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C3A451D61D3B800050AA3 /* ReportsViewController.swift */; };
+		3A5C3A4D1D61D3B800050AA3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C3A461D61D3B800050AA3 /* SettingsViewController.swift */; };
+		3A5C3A4E1D61D3B800050AA3 /* StockInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C3A471D61D3B800050AA3 /* StockInfoViewController.swift */; };
+		8AFC80681D61A43F00F6915F /* CheckInOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC80651D61A43F00F6915F /* CheckInOutViewController.swift */; };
+		8AFC80691D61A43F00F6915F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC80661D61A43F00F6915F /* SignInViewController.swift */; };
+		8AFC806A1D61A43F00F6915F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC80671D61A43F00F6915F /* Validation.swift */; };
+		A6AD3861E72E0964825D1F1E /* Pods_QIASmartStockApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D57BDC9013D9B5BBB177AF /* Pods_QIASmartStockApp.framework */; };
+		BAFF3DFC1D5C739F00E877F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFF3DFA1D5C739F00E877F0 /* Main.storyboard */; };
+		BAFF3DFE1D5C739F00E877F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFF3DFD1D5C739F00E877F0 /* Assets.xcassets */; };
+		BAFF3E011D5C739F00E877F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFF3DFF1D5C739F00E877F0 /* LaunchScreen.storyboard */; };
+		BAFF3E0C1D5C741C00E877F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */; };
+		BAFF3E111D5C76E900E877F0 /* ESNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFF3E101D5C76E900E877F0 /* ESNavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00D57BDC9013D9B5BBB177AF /* Pods_QIASmartStockApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QIASmartStockApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A18BAE31D61F39100B0CF4D /* StockListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockListViewController.swift; sourceTree = "<group>"; };
+		3A3146221D64341900022B82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A3F09281D644F7300CD1090 /* QIASmartStockApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QIASmartStockApp.entitlements; sourceTree = "<group>"; };
+		3A3F09291D6457A700CD1090 /* QRcodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeReaderViewController.swift; sourceTree = "<group>"; };
+		3A5814641D62031500B0B6AC /* QiaCubeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiaCubeTableViewController.swift; sourceTree = "<group>"; };
+		3A5814661D62081B00B0B6AC /* CubeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeTableViewCell.swift; sourceTree = "<group>"; };
+		3A5814681D62E83400B0B6AC /* RoomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableViewController.swift; sourceTree = "<group>"; };
+		3A58146A1D62E8AB00B0B6AC /* RoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		3A58146C1D63342800B0B6AC /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		3A5C3A411D61D3B800050AA3 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		3A5C3A421D61D3B800050AA3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3A5C3A431D61D3B800050AA3 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		3A5C3A441D61D3B800050AA3 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		3A5C3A451D61D3B800050AA3 /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		3A5C3A461D61D3B800050AA3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3A5C3A471D61D3B800050AA3 /* StockInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockInfoViewController.swift; sourceTree = "<group>"; };
+		618CA8247DBBEB2BA7E558FA /* Pods-QIASmartStockApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QIASmartStockApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QIASmartStockApp/Pods-QIASmartStockApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8AFC80651D61A43F00F6915F /* CheckInOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInOutViewController.swift; sourceTree = "<group>"; };
+		8AFC80661D61A43F00F6915F /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8AFC80671D61A43F00F6915F /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		BAFF3DF31D5C739F00E877F0 /* QIASmartStockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QIASmartStockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFF3DFB1D5C739F00E877F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAFF3DFD1D5C739F00E877F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAFF3E001D5C739F00E877F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAFF3E021D5C739F00E877F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAFF3E101D5C76E900E877F0 /* ESNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESNavigationController.swift; sourceTree = "<group>"; };
+		E199E75A111067013FD0969E /* Pods-QIASmartStockApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QIASmartStockApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QIASmartStockApp/Pods-QIASmartStockApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAFF3DF01D5C739F00E877F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AD3861E72E0964825D1F1E /* Pods_QIASmartStockApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A5C3A401D61D3B800050AA3 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3A5C3A411D61D3B800050AA3 /* CustomNavigationController.swift */,
+				3A5C3A421D61D3B800050AA3 /* HomeViewController.swift */,
+				3A5C3A431D61D3B800050AA3 /* LeftMenuViewController.swift */,
+				3A5C3A441D61D3B800050AA3 /* MenuTableViewCell.swift */,
+				3A5C3A451D61D3B800050AA3 /* ReportsViewController.swift */,
+				3A5C3A461D61D3B800050AA3 /* SettingsViewController.swift */,
+				3A5C3A471D61D3B800050AA3 /* StockInfoViewController.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		6BC0D3C9F63517F666BEC800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00D57BDC9013D9B5BBB177AF /* Pods_QIASmartStockApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6F6AC1A70730425C0544D45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				618CA8247DBBEB2BA7E558FA /* Pods-QIASmartStockApp.debug.xcconfig */,
+				E199E75A111067013FD0969E /* Pods-QIASmartStockApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BAFF3DEA1D5C739F00E877F0 = {
+			isa = PBXGroup;
+			children = (
+				BAFF3DF51D5C739F00E877F0 /* QIASmartStockApp */,
+				BAFF3DF41D5C739F00E877F0 /* Products */,
+				B6F6AC1A70730425C0544D45 /* Pods */,
+				6BC0D3C9F63517F666BEC800 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BAFF3DF41D5C739F00E877F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF3DF31D5C739F00E877F0 /* QIASmartStockApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAFF3DF51D5C739F00E877F0 /* QIASmartStockApp */ = {
+			isa = PBXGroup;
+			children = (
+				3A3F09281D644F7300CD1090 /* QIASmartStockApp.entitlements */,
+				BAFF3E081D5C73CC00E877F0 /* Application */,
+				BAFF3DFD1D5C739F00E877F0 /* Assets.xcassets */,
+				BAFF3E021D5C739F00E877F0 /* Info.plist */,
+				3A3146221D64341900022B82 /* GoogleService-Info.plist */,
+				BAFF3DFA1D5C739F00E877F0 /* Main.storyboard */,
+				BAFF3DFF1D5C739F00E877F0 /* LaunchScreen.storyboard */,
+				BAFF3E0E1D5C767E00E877F0 /* Library */,
+			);
+			path = QIASmartStockApp;
+			sourceTree = "<group>";
+		};
+		BAFF3E081D5C73CC00E877F0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF3E091D5C73CC00E877F0 /* Main */,
+				3A5C3A401D61D3B800050AA3 /* MainMenu */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BAFF3E091D5C73CC00E877F0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */,
+				8AFC80651D61A43F00F6915F /* CheckInOutViewController.swift */,
+				8AFC80661D61A43F00F6915F /* SignInViewController.swift */,
+				8AFC80671D61A43F00F6915F /* Validation.swift */,
+				3A18BAE31D61F39100B0CF4D /* StockListViewController.swift */,
+				3A5814641D62031500B0B6AC /* QiaCubeTableViewController.swift */,
+				3A3F09291D6457A700CD1090 /* QRcodeReaderViewController.swift */,
+				3A5814681D62E83400B0B6AC /* RoomTableViewController.swift */,
+				3A5814661D62081B00B0B6AC /* CubeTableViewCell.swift */,
+				3A58146A1D62E8AB00B0B6AC /* RoomTableViewCell.swift */,
+				3A58146C1D63342800B0B6AC /* StatusViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BAFF3E0E1D5C767E00E877F0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF3E0F1D5C76E900E877F0 /* EasySlide */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BAFF3E0F1D5C76E900E877F0 /* EasySlide */ = {
+			isa = PBXGroup;
+			children = (
+				BAFF3E101D5C76E900E877F0 /* ESNavigationController.swift */,
+			);
+			path = EasySlide;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAFF3DF21D5C739F00E877F0 /* QIASmartStockApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAFF3E051D5C739F00E877F0 /* Build configuration list for PBXNativeTarget "QIASmartStockApp" */;
+			buildPhases = (
+				547815D7FAADE4730BCD4654 /* [CP] Check Pods Manifest.lock */,
+				BAFF3DEF1D5C739F00E877F0 /* Sources */,
+				BAFF3DF01D5C739F00E877F0 /* Frameworks */,
+				BAFF3DF11D5C739F00E877F0 /* Resources */,
+				18E18A80CBE2A2CBD9274A2E /* [CP] Embed Pods Frameworks */,
+				C5D0B6760FD6E6030F1388D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QIASmartStockApp;
+			productName = QIASmartStockApp;
+			productReference = BAFF3DF31D5C739F00E877F0 /* QIASmartStockApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAFF3DEB1D5C739F00E877F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Qiagen;
+				TargetAttributes = {
+					BAFF3DF21D5C739F00E877F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BAFF3DEE1D5C739F00E877F0 /* Build configuration list for PBXProject "QIASmartStockApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAFF3DEA1D5C739F00E877F0;
+			productRefGroup = BAFF3DF41D5C739F00E877F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAFF3DF21D5C739F00E877F0 /* QIASmartStockApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAFF3DF11D5C739F00E877F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFF3E011D5C739F00E877F0 /* LaunchScreen.storyboard in Resources */,
+				3A3146231D64341900022B82 /* GoogleService-Info.plist in Resources */,
+				BAFF3DFE1D5C739F00E877F0 /* Assets.xcassets in Resources */,
+				BAFF3DFC1D5C739F00E877F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18E18A80CBE2A2CBD9274A2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QIASmartStockApp/Pods-QIASmartStockApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		547815D7FAADE4730BCD4654 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D0B6760FD6E6030F1388D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QIASmartStockApp/Pods-QIASmartStockApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAFF3DEF1D5C739F00E877F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5C3A4C1D61D3B800050AA3 /* ReportsViewController.swift in Sources */,
+				3A5C3A491D61D3B800050AA3 /* HomeViewController.swift in Sources */,
+				3A5814651D62031500B0B6AC /* QiaCubeTableViewController.swift in Sources */,
+				BAFF3E0C1D5C741C00E877F0 /* AppDelegate.swift in Sources */,
+				8AFC806A1D61A43F00F6915F /* Validation.swift in Sources */,
+				8AFC80691D61A43F00F6915F /* SignInViewController.swift in Sources */,
+				3A5C3A4E1D61D3B800050AA3 /* StockInfoViewController.swift in Sources */,
+				3A5C3A4B1D61D3B800050AA3 /* MenuTableViewCell.swift in Sources */,
+				3A58146B1D62E8AB00B0B6AC /* RoomTableViewCell.swift in Sources */,
+				BAFF3E111D5C76E900E877F0 /* ESNavigationController.swift in Sources */,
+				3A3F092A1D6457A700CD1090 /* QRcodeReaderViewController.swift in Sources */,
+				3A5814691D62E83400B0B6AC /* RoomTableViewController.swift in Sources */,
+				8AFC80681D61A43F00F6915F /* CheckInOutViewController.swift in Sources */,
+				3A5C3A481D61D3B800050AA3 /* CustomNavigationController.swift in Sources */,
+				3A5C3A4A1D61D3B800050AA3 /* LeftMenuViewController.swift in Sources */,
+				3A18BAE41D61F39100B0CF4D /* StockListViewController.swift in Sources */,
+				3A5C3A4D1D61D3B800050AA3 /* SettingsViewController.swift in Sources */,
+				3A58146D1D63342800B0B6AC /* StatusViewController.swift in Sources */,
+				3A5814671D62081B00B0B6AC /* CubeTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BAFF3DFA1D5C739F00E877F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAFF3DFB1D5C739F00E877F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAFF3DFF1D5C739F00E877F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAFF3E001D5C739F00E877F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAFF3E031D5C739F00E877F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAFF3E041D5C739F00E877F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAFF3E061D5C739F00E877F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 618CA8247DBBEB2BA7E558FA /* Pods-QIASmartStockApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = QIASmartStockApp/QIASmartStockApp.entitlements;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QIASmartStockApp/Library/Auth",
+					"$(PROJECT_DIR)/QIASmartStockApp/Library/Analytics",
+				);
+				INFOPLIST_FILE = QIASmartStockApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		BAFF3E071D5C739F00E877F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E199E75A111067013FD0969E /* Pods-QIASmartStockApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = QIASmartStockApp/QIASmartStockApp.entitlements;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QIASmartStockApp/Library/Auth",
+					"$(PROJECT_DIR)/QIASmartStockApp/Library/Analytics",
+				);
+				INFOPLIST_FILE = QIASmartStockApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAFF3DEE1D5C739F00E877F0 /* Build configuration list for PBXProject "QIASmartStockApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFF3E031D5C739F00E877F0 /* Debug */,
+				BAFF3E041D5C739F00E877F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAFF3E051D5C739F00E877F0 /* Build configuration list for PBXNativeTarget "QIASmartStockApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFF3E061D5C739F00E877F0 /* Debug */,
+				BAFF3E071D5C739F00E877F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAFF3DEB1D5C739F00E877F0 /* Project object */;
+}

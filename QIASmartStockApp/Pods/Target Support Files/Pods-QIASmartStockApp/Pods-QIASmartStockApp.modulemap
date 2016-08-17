@@ -1,0 +1,6 @@
+framework module Pods_QIASmartStockApp {
+  umbrella header "Pods-QIASmartStockApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
