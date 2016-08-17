@@ -2,8 +2,8 @@
 //  LeftMenuViewController.swift
 //  QIASmartStockApp
 //
-//  Created by Mane Hambardzumyan on 8/11/16.
-//  Copyright © 2016 Qiagen. All rights reserved.
+//  Created by Mane Hambardzumyan on 8/15/16.
+//  Copyright © 2016 Instigate Mobile. All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,6 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
 	@IBOutlet private weak var tableView: UITableView!
 
 	private let menuItems = ["Home", "Settings", "Reports", "Stock info"]
-//	private var menuViewControllers: [UIViewController] = []
 
 	var easySlideNavigationController: ESNavigationController?
 
@@ -22,12 +21,6 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
 		self.tableView.dataSource = self
 		self.tableView.delegate = self
 
-		// load menu view controllers
-//		let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//		for menuItem in menuItems {
-//			let viewController = storyboard.instantiateViewControllerWithIdentifier("\(menuItem)ViewController")
-//			self.menuViewControllers.append(viewController)
-//		}
 	}
 
 	// MARK: - UITableViewDataSource, UITableViewDelegate
@@ -53,7 +46,7 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
 		// get the new view controller
-		let viewController = storyboard.instantiateViewControllerWithIdentifier("\(menuItems[indexPath.row])ViewController")
+		let viewController = storyboard.instantiateViewControllerWithIdentifier("\(menuItems[indexPath.row])ViewControllerID")
 
 		// present next view
 		if let slideController = self.easySlideNavigationController {
