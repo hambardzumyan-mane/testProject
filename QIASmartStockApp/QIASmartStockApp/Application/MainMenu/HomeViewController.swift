@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    // wher is privat
 	@IBOutlet var stockList: UIButton!
 	@IBOutlet var checkOut: UIButton!
 	@IBOutlet var manageStock: UIButton!
@@ -20,6 +21,7 @@ class HomeViewController: UIViewController {
 		let arrayOfButtons: Array<UIButton> = [self.stockList, self.checkOut, self.manageStock]
 
 		for button in arrayOfButtons {
+            // Use generic func
 			button.backgroundColor = UIColor.whiteColor()
 			button.layer.shadowColor = UIColor.blackColor().CGColor
 			button.layer.shadowOffset = CGSizeMake(2, 2)
@@ -40,6 +42,7 @@ class HomeViewController: UIViewController {
 	// In a storyboard-based application, you will often want to do a little preparation before navigation
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		let viewControler = segue.destinationViewController
+        // Optemize the code
 		if segue.identifier == "checkInSegue" {
 			let checkInOutViewController = viewControler as! CheckInOutViewController
 			checkInOutViewController.status = .CheckIn

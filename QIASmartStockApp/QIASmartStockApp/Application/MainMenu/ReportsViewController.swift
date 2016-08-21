@@ -13,6 +13,7 @@ class ReportsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // RM
         do {
             try FIRAuth.auth()?.signOut()
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

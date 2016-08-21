@@ -23,6 +23,7 @@ class MenuTableViewCell: UITableViewCell {
 
 	override func layoutSubviews() {
 		super.layoutSubviews()
+        //Why so?
 		self.imageView?.frame = CGRectMake(15, 5, 30, 30)
 	}
 

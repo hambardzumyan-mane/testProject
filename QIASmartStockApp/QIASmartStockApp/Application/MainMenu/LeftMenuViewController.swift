@@ -20,7 +20,6 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
 		super.viewDidLoad()
 		self.tableView.dataSource = self
 		self.tableView.delegate = self
-
 	}
 
 	// MARK: - UITableViewDataSource, UITableViewDelegate
@@ -35,7 +34,7 @@ class LeftMenuViewController: UIViewController, UITableViewDataSource, UITableVi
 		let cell = tableView.dequeueReusableCellWithIdentifier(MenuTableViewCell.CELL_ID, forIndexPath: indexPath)
 		let title = menuItems[indexPath.row]
 		cell.textLabel?.text = title
-		cell.imageView!.image = UIImage(named: "\(title)Icon")!
+		cell.imageView?.image = UIImage(named: "\(title)Icon")
 		return cell
 	}
 

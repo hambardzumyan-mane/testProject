@@ -19,28 +19,28 @@
                         <viewControllerLayoutGuide type="bottom" id="i8S-yc-ib7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fgH-Cb-RvG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bd6-bH-FTH">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWn-rF-xop" userLabel="topBarView">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Oaq-EL-wAK"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bd6-bH-FTH" userLabel="tableView">
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuTableViewCellId" id="AHe-PQ-1uf" customClass="MenuTableViewCell" customModule="QIASmartStockApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AHe-PQ-1uf" id="ahn-Fe-C1G">
-                                            <frame key="frameInset" width="1000" height="44"/>
+                                            <frame key="frameInset" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWn-rF-xop" userLabel="topBarView">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Oaq-EL-wAK"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -87,7 +87,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vmF-13-ral"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YqH-RR-zgZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TBD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBy-Sx-Av0">
@@ -116,7 +116,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Zue-8E-4fr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PWr-S4-WSo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TBD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-dk-0Vo">
@@ -145,7 +145,7 @@
                         <viewControllerLayoutGuide type="bottom" id="nff-6Y-ciD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cms-C2-mZz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qiagen" translatesAutoresizingMaskIntoConstraints="NO" id="DZx-Fu-QvT" userLabel="QIAGENicon"/>
@@ -326,7 +326,7 @@
                         <viewControllerLayoutGuide type="bottom" id="i7H-NY-a3p"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="m10-GI-O3e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qiagen" translatesAutoresizingMaskIntoConstraints="NO" id="l4J-1b-Gxj" userLabel="QIAGENicon"/>
@@ -553,7 +553,7 @@
                         <viewControllerLayoutGuide type="bottom" id="07p-p5-MZt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Nb-By-Dbm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qiagen" translatesAutoresizingMaskIntoConstraints="NO" id="Und-Ly-4X1" userLabel="QIAGENicon"/>
@@ -847,15 +847,15 @@
             <objects>
                 <tableViewController title="Stock List" id="cYO-K1-tLG" customClass="StockListViewController" customModule="QIASmartStockApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wm3-Ds-xdr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stockCell" id="a3j-39-Ahj">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a3j-39-Ahj" id="aFu-7p-GwZ">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="3bB-3v-DMA">
@@ -891,11 +891,11 @@
             <objects>
                 <tableViewController title="Rooms" id="Uw3-8u-55h" customClass="QiaCubeTableViewController" customModule="QIASmartStockApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GPV-c4-iHx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="SFV-ZM-anf" userLabel="headerView">
-                            <rect key="frame" x="0.0" y="64" width="375" height="20"/>
+                            <rect key="frame" x="0.0" y="64" width="414" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vso-Au-Mdf">
@@ -921,10 +921,10 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cubeCell" id="UWX-yy-gcH" customClass="CubeTableViewCell" customModule="QIASmartStockApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="112" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UWX-yy-gcH" id="xb2-6G-SZd">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gax-Zp-DTK" userLabel="locationLabel">
@@ -978,11 +978,11 @@
             <objects>
                 <tableViewController title="Items" id="CEp-mx-3lJ" customClass="RoomTableViewController" customModule="QIASmartStockApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="91a-Yf-Oz4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="7i3-Sf-tAO" userLabel="headerView">
-                            <rect key="frame" x="0.0" y="64" width="375" height="20"/>
+                            <rect key="frame" x="0.0" y="64" width="414" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uJ9-Du-x3w">
@@ -1018,10 +1018,10 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="roomCell" id="ShS-QY-BLT" customClass="RoomTableViewCell" customModule="QIASmartStockApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="112" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ShS-QY-BLT" id="NqS-Bi-LBN">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rbk-1Q-zk7" userLabel="productIdLabel">
@@ -1078,7 +1078,7 @@
                         <viewControllerLayoutGuide type="bottom" id="feM-H6-K7t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1YD-TE-Sap">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-29-1VF" userLabel="infoLabel">
@@ -1146,7 +1146,7 @@
                         <viewControllerLayoutGuide type="bottom" id="L0H-OW-WYs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5IM-ks-mTS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj5-Tb-ASQ" userLabel="centerView">
@@ -1223,17 +1223,17 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="5ih-ji-v19"/>
+                                        <exclude reference="EB0-ZM-o3t"/>
                                         <exclude reference="bVv-r3-LMR"/>
                                         <exclude reference="igO-Fk-yNd"/>
-                                        <exclude reference="EB0-ZM-o3t"/>
-                                        <exclude reference="qdQ-fo-Ija"/>
-                                        <exclude reference="boA-UY-g65"/>
+                                        <exclude reference="Dy2-Fq-7cy"/>
+                                        <exclude reference="UZQ-dp-gXD"/>
+                                        <exclude reference="hrT-hw-byk"/>
+                                        <exclude reference="oyE-Ho-yI6"/>
                                         <exclude reference="SIU-56-rim"/>
                                         <exclude reference="Yud-Eb-sSo"/>
-                                        <exclude reference="Dy2-Fq-7cy"/>
-                                        <exclude reference="oyE-Ho-yI6"/>
-                                        <exclude reference="hrT-hw-byk"/>
-                                        <exclude reference="UZQ-dp-gXD"/>
+                                        <exclude reference="boA-UY-g65"/>
+                                        <exclude reference="qdQ-fo-Ija"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -1244,17 +1244,17 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="5ih-ji-v19"/>
+                                        <include reference="EB0-ZM-o3t"/>
                                         <include reference="bVv-r3-LMR"/>
                                         <include reference="igO-Fk-yNd"/>
-                                        <include reference="EB0-ZM-o3t"/>
-                                        <include reference="qdQ-fo-Ija"/>
-                                        <include reference="boA-UY-g65"/>
+                                        <include reference="Dy2-Fq-7cy"/>
+                                        <include reference="UZQ-dp-gXD"/>
+                                        <include reference="hrT-hw-byk"/>
+                                        <include reference="oyE-Ho-yI6"/>
                                         <include reference="SIU-56-rim"/>
                                         <include reference="Yud-Eb-sSo"/>
-                                        <include reference="Dy2-Fq-7cy"/>
-                                        <include reference="oyE-Ho-yI6"/>
-                                        <include reference="hrT-hw-byk"/>
-                                        <include reference="UZQ-dp-gXD"/>
+                                        <include reference="boA-UY-g65"/>
+                                        <include reference="qdQ-fo-Ija"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1271,10 +1271,10 @@
                                 <exclude reference="yj5-Tb-ASQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="cvE-eB-w1h"/>
                                 <exclude reference="5a1-Qr-coL"/>
-                                <exclude reference="wIP-8C-WKX"/>
+                                <exclude reference="cvE-eB-w1h"/>
                                 <exclude reference="jet-lT-iP0"/>
+                                <exclude reference="wIP-8C-WKX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1282,10 +1282,10 @@
                                 <include reference="yj5-Tb-ASQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="cvE-eB-w1h"/>
                                 <include reference="5a1-Qr-coL"/>
-                                <include reference="wIP-8C-WKX"/>
+                                <include reference="cvE-eB-w1h"/>
                                 <include reference="jet-lT-iP0"/>
+                                <include reference="wIP-8C-WKX"/>
                             </mask>
                         </variation>
                     </view>
@@ -1317,7 +1317,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aRd-hc-34V"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QAX-NA-OfH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTC-O9-SEY" userLabel="barCodeView">
@@ -1357,7 +1357,7 @@
         <image name="RightArrow" width="604" height="980"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BMm-Ei-0cS"/>
+        <segue reference="Q3K-fq-44G"/>
         <segue reference="k16-Hg-DIC"/>
     </inferredMetricsTieBreakers>
 </document>

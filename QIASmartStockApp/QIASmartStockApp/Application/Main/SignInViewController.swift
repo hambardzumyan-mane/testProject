@@ -21,8 +21,10 @@ class SignInViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		self.hideKeyboard()
+        // Why its called here?
+		//self.hideKeyboard()
 
+        // This should be a separate function written somewhere generic e.g. in utils
 		self.signIn.backgroundColor = UIColor.whiteColor()
 		self.signIn.layer.shadowColor = UIColor.blackColor().CGColor
 		self.signIn.layer.shadowOffset = CGSizeMake(2, 2)
@@ -41,11 +43,12 @@ class SignInViewController: UIViewController {
 	}
 
 	// MARK:- Action method
-
+    // The action functions showld be written in odther way
 	@IBAction func signIn(sender: AnyObject) {
 		let mail: String! = self.email.text
 		let pass: String! = self.password.text
 
+        // Optemize this code. Its not good
 		if (mail.isEmpty || pass.isEmpty || !validation.emailIsValid(mail) || !validation.passwordIsValid(pass)) {
 			NSLog("email/pass is empty/invalid")
 
@@ -83,14 +86,18 @@ class SignInViewController: UIViewController {
                     return
                 }
                 
+                // Why we do not perfrom segue?
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let viewController = storyboard.instantiateViewControllerWithIdentifier("MenuNavigationController")
                 UIApplication.sharedApplication().keyWindow?.rootViewController = viewController
             }
 		}
 	}
+    
+    // Where is pragma mark ?
 
 	private func showAlertBox() {
+        // The dialog message is not friendly
 		let alertBox = UIAlertController(title: "Incorrect email or password", message:
 				"You typed the wrong email or password! \n Click to Continue to correct the fault.", preferredStyle: UIAlertControllerStyle.Alert)
 		alertBox.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.Default, handler: nil))

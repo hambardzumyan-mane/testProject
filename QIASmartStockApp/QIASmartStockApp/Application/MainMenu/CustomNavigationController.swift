@@ -43,6 +43,7 @@ extension UIBarButtonItem {
 	class func itemWith(colorfulImage: UIImage?, target: AnyObject, action: Selector) -> UIBarButtonItem {
 		let button = UIButton(type: .Custom)
 		button.setImage(colorfulImage, forState: .Normal)
+        // Why we are providing the sizes
 		button.frame = CGRectMake(0, 0, 44.0, 44.0)
 		button.addTarget(target, action: action, forControlEvents: .TouchUpInside)
 

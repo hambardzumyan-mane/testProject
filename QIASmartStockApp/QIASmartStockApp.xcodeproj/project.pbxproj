@@ -153,10 +153,10 @@
 		BAFF3E091D5C73CC00E877F0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */,
-				8AFC80651D61A43F00F6915F /* CheckInOutViewController.swift */,
-				8AFC80661D61A43F00F6915F /* SignInViewController.swift */,
 				8AFC80671D61A43F00F6915F /* Validation.swift */,
+				BAFF3E0A1D5C741C00E877F0 /* AppDelegate.swift */,
+				8AFC80661D61A43F00F6915F /* SignInViewController.swift */,
+				8AFC80651D61A43F00F6915F /* CheckInOutViewController.swift */,
 				3A18BAE31D61F39100B0CF4D /* StockListViewController.swift */,
 				3A5814641D62031500B0B6AC /* QiaCubeTableViewController.swift */,
 				3A3F09291D6457A700CD1090 /* QRcodeReaderViewController.swift */,
